@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.kapsayici {
+    width: 600px;
+    padding: 20px;
+    background-color: lightseagreen;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > div {
+        position: relative;
+    }
+}
+
+.kutu {
+    width: 350px;
+    height: 200px;
+    background-color: lightcoral;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

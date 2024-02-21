@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.kapsayici {
+    max-width: 800px;
+    background-color: lightblue;
+    margin-inline: auto;
+    padding: 10px;
+
+    display: grid;
+    /* gap: 5px; */
+    row-gap: 10px;
+    column-gap: 5px;
+    /* grid-template-columns: 1fr 1fr 1fr;    */
+    /* grid-template-columns: 50% auto 70px; */
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.eleman {
+    background-color: lightcoral;
+    padding: 5px;
+}
+
+body {
+    background-color: #f00;
+}
+
+@media (width <= 600px) {
+    body {
+        background-color: cyan;
+    }
+
+    .kapsayici {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width <= 400px) {
+    body {
+        background-color: limegreen;
+    }
+
+    .kapsayici {
+        grid-template-columns: 1fr;
+    }
+}
